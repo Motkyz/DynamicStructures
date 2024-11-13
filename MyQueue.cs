@@ -50,7 +50,6 @@ namespace DynamicStructures
 
         public void ExecuteFile(string path)
         {
-            path = "..\\..\\..\\files\\input.txt";
             string f = File.ReadAllText(path);
             Console.WriteLine(f);
 

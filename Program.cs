@@ -36,11 +36,11 @@ class Program
             switch (choice)
             {
                 case "1": 
-                    myStack.ExecuteFile("..\\..\\..\\files\\Input.txt"); break;
+                    myStack.ExecuteFile("input.txt"); break;
                 case "2": 
                     myStack.ExecuteUser(Console.ReadLine()); break; 
                 case "3": 
-                    RPN rpn = new RPN(File.ReadAllText("..\\..\\..\\files\\input1.txt"));
+                    RPN rpn = new RPN(File.ReadAllText("input1.txt"));
                     Console.WriteLine($"Выражение в инфиксном виде: {rpn.Input}");
                     Console.WriteLine($"Выражение в постфиксном виде: {rpn.Rpn}");
                     Console.WriteLine($"Ответ: {rpn.Result}");
@@ -52,7 +52,7 @@ class Program
                     Console.WriteLine($"Ответ: {rpn.Result}");
                     break;
                 case "5": 
-                    myQueue.ExecuteFile("..\\..\\..\\files\\Input.txt"); break; 
+                    myQueue.ExecuteFile("input.txt"); break; 
                 case "6": 
                     myQueue.ExecuteUser(Console.ReadLine()); break;
                 case "7": 

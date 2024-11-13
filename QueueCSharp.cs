@@ -15,7 +15,7 @@ namespace DynamicStructures
             DoOperation(file);
         }
 
-        private static string ReadFile(string fileName) => File.ReadAllText($"..\\..\\..\\files\\{fileName}");
+        private static string ReadFile(string fileName) => File.ReadAllText($"{fileName}");
 
         private static void DoOperation(string operationNumber)
         {
